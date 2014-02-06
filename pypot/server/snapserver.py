@@ -84,7 +84,7 @@ if __name__ == '__main__':
 
     arm_config = ergo_robot_config.copy()
 
-    port = '/dev/ttyUSB0' if platform.system() == 'linux' else '/dev/tty.usbserial-AD01UYPC'
+    port = '/dev/ttyUSB0' if platform.system() == 'linux' else '/dev/tty.usbserial-A4012ACT'
     arm_config['controllers']['my_dxl_controller']['port'] = port
 
     arm_config['motors']['gripper'] = {'angle_limit': (-90, -50),
